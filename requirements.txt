@@ -1,0 +1,66 @@
+# ============================================================================
+# INVENTRA - Multi-Agent Inventory Management System
+# ============================================================================
+# This file lists all Python dependencies required for the Inventra project.
+# 
+# INSTALLATION:
+#   pip install -r requirements.txt
+#
+# DEPENDENCIES OVERVIEW:
+# ----------------------
+# 1. LangChain Ecosystem - For building AI agents and chains
+# 2. LangGraph - For orchestrating multi-agent workflows
+# 3. Google Generative AI - Gemini API integration
+# 4. Streamlit - Web UI for conversational interface
+# 5. Database & Data Processing - SQLite, Pandas
+# ============================================================================
+
+# -----------------------------------------------------------------------------
+# LangChain Core: Foundation for building LLM applications
+# - langchain: Core abstractions (chains, prompts, memory)
+# - langchain-core: Base interfaces and schemas
+# -----------------------------------------------------------------------------
+langchain>=0.3.0
+langchain-core>=0.3.0
+
+# -----------------------------------------------------------------------------
+# LangGraph: State machine framework for multi-agent orchestration
+# - Enables building complex agent workflows with conditional routing
+# - Supports checkpointing and state persistence
+# -----------------------------------------------------------------------------
+langgraph>=0.2.0
+
+# -----------------------------------------------------------------------------
+# Google Generative AI: Gemini API integration for LangChain
+# - Provides ChatGoogleGenerativeAI for LLM calls
+# - Supports Gemini Pro and Gemini Pro Vision models
+# -----------------------------------------------------------------------------
+langchain-google-genai>=2.0.0
+
+# -----------------------------------------------------------------------------
+# Streamlit: Interactive web application framework
+# - Used for building the conversational UI
+# - Provides chat interface components
+# -----------------------------------------------------------------------------
+streamlit>=1.40.0
+
+# -----------------------------------------------------------------------------
+# Data Processing Libraries
+# - pandas: DataFrame operations for inventory data analysis
+# - Enables SQL query result manipulation
+# -----------------------------------------------------------------------------
+pandas>=2.0.0
+
+# -----------------------------------------------------------------------------
+# Environment & Configuration
+# - python-dotenv: Load environment variables from .env file
+# - Essential for managing API keys securely
+# -----------------------------------------------------------------------------
+python-dotenv>=1.0.0
+
+# -----------------------------------------------------------------------------
+# Pydantic: Data validation and settings management
+# - Used for structured outputs from agents
+# - Ensures type safety and data consistency
+# -----------------------------------------------------------------------------
+pydantic>=2.0.0
